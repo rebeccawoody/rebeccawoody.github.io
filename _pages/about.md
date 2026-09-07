@@ -2,7 +2,7 @@
 layout: about
 title: home
 permalink: /
-subtitle: Astrophysicist · PhD Candidate · Center for Astrophysics | Harvard &amp; Smithsonian · Cambridge, MA
+subtitle: Astrophysicist · PhD Candidate · Center for Astrophysics | Harvard &amp; Smithsonian, Cambridge, MA
 
 profile:
   align: left
