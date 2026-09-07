@@ -5,6 +5,7 @@ description: 'Using geometric radii of detached eclipsing binaries and stars wit
 img: assets/img/research/irad_amlt_vs_fehs_prescriptions.png
 importance: 2
 category: research
+no_link: true # unpublished — card is not clickable
 ---
 
 *Project summary coming soon.*
