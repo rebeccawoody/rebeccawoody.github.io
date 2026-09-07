@@ -45,3 +45,9 @@ body {
   background-position: 0 0;
   background-attachment: fixed;
 }
+
+/* Smaller project (Research) card titles so long titles wrap less */
+.projects .card-title {
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
