@@ -10,6 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p><a href="mailto:rebecca.woody@cfa.harvard.edu">rebecca.woody@cfa.harvard.edu</a></p>
+    <p><a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0002-0721-6715&amp;sort=date%20desc%2C%20bibcode%20desc&amp;p_=0">Publications</a></p>
     <p><a href="https://orcid.org/0000-0002-0721-6715"><i class="ai ai-orcid" style="color: #A6CE39;"></i> ORCID iD</a></p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
