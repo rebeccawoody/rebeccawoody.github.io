@@ -2,17 +2,15 @@
 layout: about
 title: home
 permalink: /
-subtitle: Astrophysicist · Center for Astrophysics | Harvard &amp; Smithsonian
+subtitle: Astrophysicist · PhD Candidate · Center for Astrophysics | Harvard &amp; Smithsonian · Cambridge, MA
 
 profile:
   align: left
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Center for Astrophysics</p>
-    <p>Harvard &amp; Smithsonian</p>
-    <p>Cambridge, MA</p>
     <p><a href="mailto:rebecca.woody@cfa.harvard.edu">rebecca.woody@cfa.harvard.edu</a></p>
+    <p>ORCID: <a href="https://orcid.org/0000-0002-0721-6715">0000-0002-0721-6715</a></p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
