@@ -12,9 +12,10 @@ profile:
     <p>Center for Astrophysics</p>
     <p>Harvard &amp; Smithsonian</p>
     <p>Cambridge, MA</p>
+    <p><a href="mailto:rebecca.woody@cfa.harvard.edu">rebecca.woody@cfa.harvard.edu</a></p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: false # includes a list of news items
