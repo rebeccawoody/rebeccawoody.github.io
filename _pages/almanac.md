@@ -1,11 +1,10 @@
 ---
 layout: page
-title: almanac
+title: Almanac
 permalink: /almanac/
-description: Highlights of interesting stars — an evolving almanac. (Working title.)
+description: Highlights of non-solar calibrators and other interesting stars — an evolving almanac.
 nav: true
 nav_order: 4
 ---
 
-*Coming soon* — a catalog of interesting stars, each with its own visual identity
-(e.g. AI Phe, μ Cas, ν Ind), tied to their place in the sky.
+*Coming soon* 

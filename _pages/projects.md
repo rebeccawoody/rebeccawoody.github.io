@@ -1,11 +1,10 @@
 ---
 layout: page
-title: research
+title: Research
 permalink: /research/
 description: My research programs and current topics.
 nav: true
 nav_order: 2
-display_categories: [work, fun]
 horizontal: false
 ---
 
