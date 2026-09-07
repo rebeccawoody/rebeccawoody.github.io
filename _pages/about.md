@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p><a href="mailto:rebecca.woody@cfa.harvard.edu">rebecca.woody@cfa.harvard.edu</a></p>
-    <p>ORCID: <a href="https://orcid.org/0000-0002-0721-6715">0000-0002-0721-6715</a></p>
+    <p><a href="https://orcid.org/0000-0002-0721-6715"><i class="ai ai-orcid" style="color: #A6CE39;"></i> https://orcid.org/0000-0002-0721-6715</a></p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
@@ -22,8 +22,6 @@ latest_posts:
   enabled: false
 ---
 
-I'm Rebecca Woody, an astrophysicist at the Center for Astrophysics, Harvard &amp; Smithsonian. My research focuses on stellar evolution and on quantifying the uncertainties that go into stellar ages.
+I'm a sixth and final year PhD candidate in the Department of Astronomy at Harvard University.  My primary research interests lie in stellar evolution and Galactic archaeology, with a particular focus on deriving and using robust stellar ages to study the formation history of our Galaxy.  The core of my thesis is using non-solar benchmark stars to quantify and calibrate the systematics in stellar ages that arise from the imperfect treatment of convection in low mass stars.  My ongoing work includes a program to use these benchmark stars to create a robust absolute age scale for the [MIST](https://waps.cfa.harvard.edu/MIST/) isochrone library, incorporating uncertainties in other input physics beyond convection.  
 
-A central thread of my work is a program to improve stellar age and evolution uncertainties by combining posterior samples for individual, well-characterized stars with generalized [MIST](https://waps.cfa.harvard.edu/MIST/) grids. Along the way I build up a small catalog of benchmark stars — each with its own visual identity — such as AI Phe, μ Cas, and ν Ind.
-
-*This page is a work in progress — replace this text with your own bio, drop a headshot in as `assets/img/prof_pic.jpg`, and add your papers to `_bibliography/papers.bib`.*
+*This page is a work in progress — add your papers to `_bibliography/papers.bib`.*
