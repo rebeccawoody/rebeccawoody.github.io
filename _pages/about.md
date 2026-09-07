@@ -1,0 +1,34 @@
+---
+layout: about
+title: about
+permalink: /
+subtitle: Astrophysicist · Center for Astrophysics | Harvard &amp; Smithsonian
+
+profile:
+  align: right
+  image: prof_pic.jpg
+  image_circular: false # crops the image to make it circular
+  more_info: >
+    <p>Center for Astrophysics</p>
+    <p>Harvard &amp; Smithsonian</p>
+    <p>Cambridge, MA</p>
+
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: true # includes social icons at the bottom of the page
+
+announcements:
+  enabled: true # includes a list of news items
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  limit: 5 # leave blank to include all the news in the `_news` folder
+
+latest_posts:
+  enabled: true
+  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 3 # leave blank to include all the blog posts
+---
+
+I'm Rebecca Woody, an astrophysicist at the Center for Astrophysics | Harvard &amp; Smithsonian. My research focuses on stellar evolution and on quantifying the uncertainties that go into stellar ages.
+
+A central thread of my work is a program to improve stellar age and evolution uncertainties by combining posterior samples for individual, well-characterized stars with generalized [MIST](https://waps.cfa.harvard.edu/MIST/) grids. Along the way I build up a small catalog of benchmark stars — each with its own visual identity — such as AI Phe, μ Cas, and ν Ind.
+
+*This page is a work in progress — replace this text with your own bio, drop a headshot in as `assets/img/prof_pic.jpg`, and add your papers to `_bibliography/papers.bib`.*
