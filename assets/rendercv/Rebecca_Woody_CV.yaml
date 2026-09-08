@@ -28,7 +28,7 @@ cv:
     Education:
       - institution: Harvard University           
         area: Astronomy & Astrophysics
-        degree: PhD Candidate
+        degree: PhD
         date: "Aug 2021 – present" # literal text; publications use year-only (single_date: YEAR)
         location: Cambridge, MA
         highlights:
@@ -62,7 +62,7 @@ cv:
       - bullet: "*TODO Conference*, Location (Month Year)"
 
     Workshops:
-      - bullet: "Yale/CeNAM Nuclear AsteroseismologyWorkshop (July 2026)"
+      - bullet: "Yale/CeNAM Nuclear Asteroseismology Workshop (July 2026)"
       - bullet: "MESA Summer School, KU Leuven (2025)"
 
     First-Author Publications:
