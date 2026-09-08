@@ -2,7 +2,7 @@
 layout: page
 title: Research
 permalink: /research/
-description: Publications and research projects
+description: First authored publications and primary ongoing research projects
 nav: true
 nav_order: 2
 horizontal: true

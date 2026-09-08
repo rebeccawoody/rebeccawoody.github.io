@@ -25,6 +25,9 @@
             </div>
           {% endif %}
         </div>
+        {% if project.published %}
+          <p class="card-text project-citation mb-0"><em>{{ project.published }}</em></p>
+        {% endif %}
       </div>
     </div>
   </div>
