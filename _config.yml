@@ -230,24 +230,16 @@ kramdown:
 include: ["_pages"]
 exclude:
   - plan_for_research_projects.txt
-  - AGENTS.md
-  - al-folio-upgrade-report.md
-  - bin/
   - CLAUDE.md
-  - Dockerfile
-  - docker-compose.yml
-  - docker-compose-slim.yml
-  - docs/
+  - PROJECT_LOG.md
+  - README.md
+  - LICENSE
   - Gemfile
   - Gemfile.lock
-  - LICENSE
-  - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
-  - README.md
-  - readme_preview/
+  - requirements.txt
   - gems/
   - migrations/
   - vendor
