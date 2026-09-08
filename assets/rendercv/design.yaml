@@ -39,3 +39,5 @@ design:
       separator: "|"
   sections:
     show_time_spans_in: []
+  templates:
+    single_date: "YEAR" # publications show just the year (not "Jan 2021")
