@@ -4,9 +4,9 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 3
-cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
+# cv_pdf: /assets/pdf/woody_cv.pdf # add a PDF to assets/pdf/ and uncomment for a download button
 cv_format: rendercv # options: rendercv, jsonresume
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
+description: Curriculum vitae. Edit the underlying data in '_data/cv.yml'.
 toc:
   sidebar: left
 ---

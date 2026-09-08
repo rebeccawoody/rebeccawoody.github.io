@@ -1,189 +1,126 @@
-cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
-  image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+# =============================================================================
+# CV data (rendercv format) — modeled on Seth Gossage's academic CV
+#   Source: https://sgossage.github.io/cv/CV_sgossage2024.pdf
+#
+# HOW THE THEME RENDERS THIS (al_folio_cv 1.0.2):
+#   Only these section NAMES get rich (dated, structured) rendering:
+#     Experience (+ Volunteer, merged into "Experience" and floated to the top),
+#     Education, Awards / "Honors and Awards", Publications, Skills, Languages,
+#     Interests / "Academic Interests", Certificates, Projects, References.
+#   ANY other section name renders "generic": only `bullet:` lines or
+#     `label:`/`details:` pairs show up. That's why Talks, Teaching, and the two
+#     publication lists below are written as `bullet:` items.
+#   Sections render top-to-bottom in the order written here (except Experience,
+#     which is always pulled to the top).
+#
+# TODO markers = fill in / verify your real details.
+# =============================================================================
 
-  social_networks:
-    - network: X
-      username: AlbertEinstein
-    - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
+cv:
+  name: Rebecca Woody
+  label: Ph.D. Candidate, Astrophysics
+  email: rebecca.woody@cfa.harvard.edu
+  website: https://rebeccawoody.github.io/
+  # phone: ""  # optional
+  # image: ""  # optional
+  # summary: >   # optional — Gossage's CV has none; uncomment to add a blurb.
+  #   ...
 
   address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
+    street: 60 Garden Street            # TODO: verify / change to your mailing address
+    city: Cambridge
+    region: MA
+    postalCode: "02138"
     countryCode: US
 
   sections:
-    Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
-        highlights:
-          - Description 1.
-          - Description 2.
-
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
-
+    # --- "Employment" on Gossage's CV → Experience (recognized, rich) ---------
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: Center for Astrophysics | Harvard & Smithsonian
+        position: Graduate Researcher                 # TODO: verify title
+        location: Cambridge, MA
+        start_date: 2020                              # TODO: verify start year
+        # end_date omitted → renders "Present"
+        summary: ""                                   # optional one-line italic blurb
         highlights:
-          - Relativity
-          - Description 2.
+          - "TODO: research group / advisor and a one-line description."
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+    # --- Education (recognized, rich) -----------------------------------------
+    Education:
+      - institution: Harvard University               # TODO: verify (Harvard Griffin GSAS)
+        area: Astronomy & Astrophysics
+        studyType: Ph.D. (in progress)
+        start_date: 2020                              # TODO: verify
+        # end_date: 2026                              # TODO: expected year
+        location: Cambridge, MA
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Advisor: TODO"
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      - institution: TODO Undergraduate Institution   # TODO
+        area: Physics / Astronomy                     # TODO
+        studyType: B.S.                               # TODO
+        start_date: 0000                              # TODO
+        end_date: 0000                                # TODO
+        location: TODO
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - "TODO: honors, e.g. Magna Cum Laude; advisor."
 
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+    # --- Research Interests (generic → single bullet paragraph) ---------------
+    Research Interests:
+      - bullet: >
+          Galactic archaeology; the formation and hierarchical assembly of the
+          Milky Way halo; globular cluster systems; stellar ages and isochrone
+          fitting; the age–metallicity relation; accreted dwarf galaxies and the
+          Gaia–Sausage–Enceladus merger; low-mass stars and the mixing-length
+          parameter.
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+    # --- Teaching & Leadership (generic → bullets; org bolded per line) --------
+    Teaching and Leadership:
+      - bullet: "**TODO Institution** — Teaching Fellow (YEAR): led sections/office hours; assisted with assignment and exam design."
+      - bullet: "**TODO Program** — Mentor (YEAR–YEAR): mentored undergraduate researchers; advised on grad-school applications."
 
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+    # --- Professional Activities (generic → bullets) ---------------------------
+    Professional Activities:
+      - bullet: "TODO: e.g. referee for a journal, review panel member, committee service."
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+    # --- "Awards & Honors" → Honors and Awards (recognized, rich) -------------
+    #   `date` badge shows the first year only; put ranges in the title/summary.
+    Honors and Awards:
+      - title: "TODO Fellowship / Award"
+        date: 0000
+        summary: "TODO: short description (optional)."
 
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+    # --- Talks (generic → bullets) --------------------------------------------
+    Talks:
+      - bullet: "*TODO Conference / Seminar*, Location (Month Year)"
 
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+    # --- Posters (generic → bullets) ------------------------------------------
+    Posters:
+      - bullet: "*TODO Conference*, Location (Month Year)"
 
-    Languages:
-      - name: German
-        summary: "Native speaker"
+    # --- Workshops (generic → bullets) ----------------------------------------
+    Workshops:
+      - bullet: "*TODO Workshop / Summer School*, Location (Month Year)"
 
-      - name: English
-        summary: "Fluent"
+    # --- First-author publications (generic → bullets; title italic, name bold)
+    #   The theme's rich "Publications" type only supports ONE section, so to keep
+    #   Gossage's first- vs co-author split each citation is a formatted bullet.
+    First-Author Publications:
+      - bullet: >
+          [*The Age–Metallicity–Specific Orbital Energy Relation for the Milky
+          Way's Globular Cluster System Confirms the Importance of Accretion for
+          Its Formation*](https://ui.adsabs.harvard.edu/abs/2021AJ....162...42W/abstract)<br>
+          **Woody, R.**, Schlaufman, K. C. 2021, AJ, 162, 42
+      - bullet: >
+          [*The Rapid Formation of the Metal-poor Milky
+          Way*](https://ui.adsabs.harvard.edu/abs/2025ApJ...978..152W)<br>
+          **Woody, R.**, et al. 2025, ApJ, 978, 152
+      - bullet: >
+          *Classical Cases of Non-Solar Mixing Length in Low Mass Stars*<br>
+          **Woody, R.**, et al., in preparation
 
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+    # --- Co-author publications (generic → bullets) ---------------------------
+    Co-Author Publications:
+      - bullet: >
+          *TODO: title*<br>
+          Lead, A., **Woody, R.**, et al. YEAR, Journal, vol, page
