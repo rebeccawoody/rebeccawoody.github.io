@@ -20,8 +20,9 @@ Built on the **al-folio** Jekyll theme. Live at **https://rebeccawoody.github.io
 - `_pages/`: `about.md` (Home, `permalink: /`), `projects.md` (**Research**, `/research/`), `cv.md`, `almanac.md`, `404.md`.
   - Nav = `nav:`/`nav_order:` frontmatter. The theme **auto-adds** `about.md` as the Home tab — do **not** set `nav: true` on it (duplicate tab).
 - `_projects/`: one file per Research card. Frontmatter: `title`, `description`, `img`, `importance`, `category: research`, optional `redirect:` (ADS URL) or `no_link: true` (unpublished → non-clickable), optional `published:` (renders an italic citation footer). Cards sort **newest-first** (reverse `importance`; give newer projects higher numbers).
-- `_data/`: `socials.yml` (home contact), `cv.yml` (CV page).
-- `assets/img/research/`: figure PNGs (+ source PDFs). `assets/css/main.scss`: local style overrides. `assets/rendercv/`: CV data.
+- `_data/`: `socials.yml` (home contact).
+- **CV = a rendercv PDF**, not the al-folio HTML CV. `cv.md` (`/cv/`) sets `cv_pdf:` and the local `_layouts/cv.liquid` override embeds that PDF in an in-browser viewer (no `_data/cv.yml`, no HTML CV). Source of truth: `assets/rendercv/Rebecca_Woody_CV.yaml` (+ `design.yaml` black-serif "classic", `locale.yaml`). Regenerate `assets/pdf/woody_cv.pdf` with `bash assets/rendercv/build_pdf.sh` (needs `rendercv` in conda `base`; see the `website-local-tooling` memory), then commit the PDF.
+- `assets/img/research/`: figure PNGs (+ source PDFs). `assets/css/main.scss`: local style overrides.
 - `_includes/projects_horizontal.liquid`: **local override** of the gem include (full-width cards, corrected image `sizes`, `no_link`/`published` support).
 
 ## Theme is gem-based
