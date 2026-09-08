@@ -6,7 +6,7 @@
 # NOTE: this is separate from _data/cv.yml (which drives the /cv/print/ HTML
 # page); rendercv and al-folio use slightly different field names.
 cv:
-  name: Rebecca Woody
+  name: Rebecca Turner Woody
   headline: Ph.D. Candidate, Astrophysics
   location: Cambridge, MA
   email: rebecca.woody@cfa.harvard.edu
@@ -16,43 +16,46 @@ cv:
       username: rebeccawoody
 
   sections:
-    Experience:
-      - company: Center for Astrophysics | Harvard & Smithsonian
-        position: Graduate Researcher            # TODO: verify title
-        location: Cambridge, MA
-        start_date: "2020"                        # TODO: verify start year
-        end_date: present
-        highlights:
-          - "TODO: research group / advisor and a one-line description."
+    # Experience:
+    #   - company: Center for Astrophysics | Harvard & Smithsonian
+    #     position: Graduate Researcher, PhD Candidate         
+    #     location: Cambridge, MA
+    #     start_date: "Fall 2021"                        # TODO: verify start year
+    #     end_date: present
+    #     highlights:
+    #       - "TODO: research group / advisor and a one-line description."
 
     Education:
-      - institution: Harvard University           # TODO: verify (Harvard Griffin GSAS)
+      - institution: Harvard University           
         area: Astronomy & Astrophysics
-        degree: PhD
-        start_date: "2020"                         # TODO: verify
+        degree: PhD Candidate
+        start_date: "2021-08"
         end_date: present
         location: Cambridge, MA
         highlights:
-          - "Advisor: TODO"
-      - institution: "TODO Undergraduate Institution"
-        area: Physics / Astronomy
-        degree: BS
-        location: "TODO"
+          - "Advisor: Charlie Conroy"
+      - institution: "Johns Hopkins University"
+        area: Physics, Mathematics
+        degree: BS, BA
+        start_date: "2017-08"
+        end_date: "2021-05"
+        location: "Baltimore, MD"
         highlights:
-          - "TODO: dates, honors (e.g. Magna Cum Laude), advisor."
+          - "Graduated summa cum laude"
 
     Research Interests:
-      - Galactic archaeology; the formation and hierarchical assembly of the Milky Way halo; globular cluster systems; stellar ages and isochrone fitting; the age–metallicity relation; accreted dwarf galaxies and the Gaia–Sausage–Enceladus merger; low-mass stars and the mixing-length parameter.
+      - Stellar evolution and modeling, stellar ages and isochrone fitting, Galactic archaeology, asteroseismology, convection and mixing length theory, low mass stars, globular clusters 
 
     Teaching and Leadership:
-      - bullet: "**TODO Institution** — Teaching Fellow (YEAR): led sections/office hours; assisted with assignment and exam design."
-      - bullet: "**TODO Program** — Mentor (YEAR–YEAR): mentored undergraduate researchers; advised on grad-school applications."
+      - bullet: "Harvard University — Lab Teaching Fellow (Spring 2024): ASTRON 16, Stellar and Planetary Astronomy"
+      - bullet: "Harvard University — Teaching Fellow (Spring 2022): ASTRON 100, Methods of Observational Astronomy"
 
-    Professional Activities:
-      - bullet: "TODO: e.g. referee for a journal, review panel member, committee service."
+    # Professional Activities:
+    #   - bullet: "TODO: e.g. referee for a journal, review panel member, committee service."
 
     Honors and Awards:
-      - bullet: "**YEAR** — TODO Fellowship / Award"
+      - bullet: "2021 Donald E. Kerr Memorial Award, Johns Hopkins University Department of Physics & Astronomy"
+      - bullet: "2020 Goldwater Scholar"
 
     Talks:
       - bullet: "*TODO Conference / Seminar*, Location (Month Year)"
@@ -61,9 +64,24 @@ cv:
       - bullet: "*TODO Conference*, Location (Month Year)"
 
     Workshops:
-      - bullet: "*TODO Workshop / Summer School*, Location (Month Year)"
+      - bullet: "Yale/CeNAM Nuclear AsteroseismologyWorkshop (July 2026)"
+      - bullet: "MESA Summer School, KU Leuven (2025)"
 
     First-Author Publications:
+      - title: Classical Cases of Non-Solar Mixing Length in Low Mass Stars
+        authors:
+          - "***Woody, R.***"
+          - et al.
+        journal: in preparation
+      - title: The Rapid Formation of the Metal-poor Milky Way
+        authors:
+          - "***Woody, R.***"
+          - Conroy, C.
+          - Cargile, P.
+          - et al.
+        journal: "ApJ, 978, 152"
+        date: "2025"
+        url: https://ui.adsabs.harvard.edu/abs/2025ApJ...978..152W/abstract
       - title: "The Age–Metallicity–Specific Orbital Energy Relation for the Milky Way's Globular Cluster System Confirms the Importance of Accretion for Its Formation"
         authors:
           - "***Woody, R.***"
@@ -71,23 +89,27 @@ cv:
         journal: "AJ, 162, 42"
         date: "2021"
         url: https://ui.adsabs.harvard.edu/abs/2021AJ....162...42W/abstract
-      - title: The Rapid Formation of the Metal-poor Milky Way
-        authors:
-          - "***Woody, R.***"
-          - et al.
-        journal: "ApJ, 978, 152"
-        date: "2025"
-        url: https://ui.adsabs.harvard.edu/abs/2025ApJ...978..152W
-      - title: Classical Cases of Non-Solar Mixing Length in Low Mass Stars
-        authors:
-          - "***Woody, R.***"
-          - et al.
-        journal: in preparation
 
     Co-Author Publications:
-      - title: "TODO: title"
+      - title: An Ancient Brown Dwarf Transiting a Metal-poor Thick-disk Star
         authors:
-          - Lead, A.
+          - Adams Redai, J.
+          - Chandra, V.
+          - Yee, S. W.
+          - "..."
           - "***Woody, R.***"
           - et al.
-        journal: "Journal, vol, page"
+        journal: "ApJL, 1002, L41"
+        date: "2026"
+        url: https://ui.adsabs.harvard.edu/abs/2026ApJ..1002L..41A/abstract
+      - title: The Stellar Halo of the Galaxy is Tilted and Doubly Broken
+        authors:
+          - Han, J. J.
+          - Conroy, C.
+          - Johnson, B. D.
+          - "..."
+          - "***Woody, R.***"
+          - et al.
+        journal: "AJ, 164, 249"
+        date: "2022"
+        url: https://ui.adsabs.harvard.edu/abs/2022AJ....164..249H/abstract
