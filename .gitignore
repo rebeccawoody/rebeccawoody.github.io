@@ -22,3 +22,6 @@ __pycache__/
 
 # Local working notes (not part of the site)
 plan_for_research_projects.txt
+
+# macOS
+.DS_Store
