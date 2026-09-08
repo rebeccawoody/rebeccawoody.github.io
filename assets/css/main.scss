@@ -58,3 +58,145 @@ body {
   color: var(--global-text-color-light);
   margin-top: 0.5rem;
 }
+
+/* =========================================================================
+   CV page — LaTeX-style academic CV (see _layouts/cv.liquid).
+   A white "paper" sheet on the beige desk; serif type; ruled headings.
+   ========================================================================= */
+.cv-paper {
+  max-width: 800px;
+  margin: 1.5rem auto 3rem;
+  padding: 3rem 3.25rem;
+  background: #fff;
+  color: #1a1a1a;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.42;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.14);
+}
+
+.cv-paper a {
+  color: #1a1a1a;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+}
+.cv-paper a:hover {
+  border-bottom-color: #1a1a1a;
+}
+
+/* Header: name (left) + contact block (right), single rule beneath */
+.cv-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.6rem;
+}
+.cv-name {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  margin: 0;
+  line-height: 1.1;
+}
+.cv-label {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #333;
+  margin-top: 0.15rem;
+}
+.cv-pdf-link {
+  display: inline-block;
+  margin-top: 0.35rem;
+  font-size: 0.8rem;
+}
+.cv-contact {
+  text-align: right;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.cv-summary {
+  margin: 0 0 1.2rem;
+  font-size: 0.95rem;
+}
+
+/* Section headings with the LaTeX double-rule underline */
+.cv-block {
+  margin-bottom: 1.4rem;
+}
+.cv-section {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 1.5rem 0 0.6rem;
+  padding-bottom: 2px;
+  border-bottom: 3px double #000;
+}
+
+/* Entry lists */
+.cv-list {
+  margin: 0 0 0 1.3rem;
+  padding: 0;
+}
+.cv-list > li {
+  margin-bottom: 0.7rem;
+}
+.cv-list > li:last-child {
+  margin-bottom: 0;
+}
+.cv-org {
+  font-weight: 700;
+}
+.cv-entry-sub {
+  margin-top: 0.05rem;
+}
+.cv-entry-date {
+  font-size: 0.9rem;
+  color: #333;
+}
+.cv-entry-summary {
+  font-style: italic;
+  margin-top: 0.15rem;
+}
+.cv-sublist {
+  margin: 0.3rem 0 0 1.1rem;
+  padding: 0;
+}
+.cv-sublist li {
+  margin-bottom: 0.15rem;
+}
+
+/* Prose (Research Interests) */
+.cv-para {
+  margin: 0 0 0.6rem;
+}
+
+/* Awards: year column + description */
+.cv-award {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
+}
+.cv-award-year {
+  flex: 0 0 70px;
+}
+.cv-award-body {
+  flex: 1;
+}
+.cv-award-summary {
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 0.1rem;
+}
+
+@media (max-width: 576px) {
+  .cv-paper {
+    padding: 1.75rem 1.35rem;
+  }
+  .cv-contact {
+    text-align: left;
+  }
+}

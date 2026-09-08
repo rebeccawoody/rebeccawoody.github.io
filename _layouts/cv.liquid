@@ -1,0 +1,94 @@
+---
+layout: default
+---
+{% comment %}
+  Local override of the al_folio_cv layout.
+  Instead of the gem's Bootstrap "card" rendering, this emits a single-column,
+  LaTeX-style academic CV (serif, ruled section headings) from the same
+  _data/cv.yml (rendercv) data. Sections render in the order written in cv.yml.
+{% endcomment %}
+{% assign cv = site.data.cv.cv %}
+
+<div class="cv-paper">
+  <header class="cv-head">
+    <div class="cv-head-left">
+      <h1 class="cv-name">{{ cv.name }}</h1>
+      {% if cv.label %}<div class="cv-label">{{ cv.label }}</div>{% endif %}
+      {% if page.cv_pdf %}
+        <a class="cv-pdf-link" {% if page.cv_pdf contains '://' %}href="{{ page.cv_pdf }}"{% else %}href="{{ page.cv_pdf | relative_url }}"{% endif %} target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+      {% endif %}
+    </div>
+    <div class="cv-contact">
+      {% if cv.address %}
+        {% if cv.address.street %}{{ cv.address.street }}<br>{% endif %}
+        {% if cv.address.city %}{{ cv.address.city }}{% if cv.address.region %}, {{ cv.address.region }}{% endif %} {{ cv.address.postalCode }}<br>{% endif %}
+      {% endif %}
+      {% if cv.phone %}{{ cv.phone }}<br>{% endif %}
+      {% if cv.email %}<a href="mailto:{{ cv.email }}">{{ cv.email }}</a>{% endif %}
+      {% if cv.website %}<br><a href="{{ cv.website }}">{{ cv.website | remove: 'https://' | remove: 'http://' }}</a>{% endif %}
+    </div>
+  </header>
+
+  {% if cv.summary %}
+    <p class="cv-summary">{{ cv.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+  {% endif %}
+
+  {% for section_pair in cv.sections %}
+    {% assign section_title = section_pair[0] %}
+    {% assign section_entries = section_pair[1] %}
+    {% assign first = section_entries[0] %}
+
+    <section class="cv-block">
+      <h2 class="cv-section">{{ section_title }}</h2>
+
+      {% comment %} Awards: entries with a title + year, rendered as a year/description grid {% endcomment %}
+      {% if first.title and first.bullet == nil %}
+        <div class="cv-awards">
+          {% for entry in section_entries %}
+            <div class="cv-award">
+              <div class="cv-award-year">{% if entry.date %}{{ entry.date | split: '-' | first }}{% endif %}</div>
+              <div class="cv-award-body">
+                {% if entry.url %}<a href="{{ entry.url }}"><strong>{{ entry.title }}</strong></a>{% else %}<strong>{{ entry.title }}</strong>{% endif %}{% if entry.awarder %} — {{ entry.awarder }}{% endif %}
+                {% if entry.summary %}<div class="cv-award-summary">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>{% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+
+      {% comment %} Research Interests: prose paragraph(s), no bullets {% endcomment %}
+      {% elsif section_title == 'Research Interests' %}
+        {% for entry in section_entries %}
+          <p class="cv-para">{{ entry.bullet | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+        {% endfor %}
+
+      {% comment %} Everything else: a bulleted list (structured entries or plain bullets) {% endcomment %}
+      {% else %}
+        <ul class="cv-list">
+          {% for entry in section_entries %}
+            {% if entry.company or entry.institution or entry.position or entry.studyType or entry.area %}
+              {% capture org %}{% if entry.company %}{{ entry.company }}{% elsif entry.institution %}{{ entry.institution }}{% elsif entry.organization %}{{ entry.organization }}{% endif %}{% endcapture %}
+              {% capture role %}{% if entry.position %}{{ entry.position }}{% else %}{{ entry.studyType }}{% if entry.area %}{% if entry.studyType %}, {% endif %}{{ entry.area }}{% endif %}{% endif %}{% endcapture %}
+              {% assign sd = entry.start_date | split: '-' | first %}
+              {% if entry.end_date %}{% assign ed = entry.end_date | split: '-' | first %}{% else %}{% assign ed = 'Present' %}{% endif %}
+              <li>
+                <span class="cv-org">{{ org | strip }}</span>{% if entry.location %}, {{ entry.location }}{% endif %}
+                {% assign role = role | strip %}{% if role != '' %}<div class="cv-entry-sub">{{ role }}</div>{% endif %}
+                {% if entry.start_date %}<div class="cv-entry-date">{{ sd }} – {{ ed }}</div>{% endif %}
+                {% if entry.summary and entry.summary != '' %}<div class="cv-entry-summary">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>{% endif %}
+                {% if entry.highlights %}
+                  <ul class="cv-sublist">
+                    {% for h in entry.highlights %}<li>{{ h | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+            {% elsif entry.bullet %}
+              <li>{{ entry.bullet | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+            {% elsif entry.label %}
+              <li><strong>{{ entry.label }}:</strong> {{ entry.details }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </section>
+  {% endfor %}
+</div>
