@@ -1,0 +1,93 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+#
+# rendercv source for assets/pdf/woody_cv.pdf (the PDF shown on the CV tab).
+# Regenerate with: bash assets/rendercv/build_pdf.sh
+# Design/locale come from design.yaml + locale.yaml in this folder.
+# NOTE: this is separate from _data/cv.yml (which drives the /cv/print/ HTML
+# page); rendercv and al-folio use slightly different field names.
+cv:
+  name: Rebecca Woody
+  headline: Ph.D. Candidate, Astrophysics
+  location: Cambridge, MA
+  email: rebecca.woody@cfa.harvard.edu
+  website: https://rebeccawoody.github.io/
+  social_networks:
+    - network: GitHub
+      username: rebeccawoody
+
+  sections:
+    Experience:
+      - company: Center for Astrophysics | Harvard & Smithsonian
+        position: Graduate Researcher            # TODO: verify title
+        location: Cambridge, MA
+        start_date: "2020"                        # TODO: verify start year
+        end_date: present
+        highlights:
+          - "TODO: research group / advisor and a one-line description."
+
+    Education:
+      - institution: Harvard University           # TODO: verify (Harvard Griffin GSAS)
+        area: Astronomy & Astrophysics
+        degree: PhD
+        start_date: "2020"                         # TODO: verify
+        end_date: present
+        location: Cambridge, MA
+        highlights:
+          - "Advisor: TODO"
+      - institution: "TODO Undergraduate Institution"
+        area: Physics / Astronomy
+        degree: BS
+        location: "TODO"
+        highlights:
+          - "TODO: dates, honors (e.g. Magna Cum Laude), advisor."
+
+    Research Interests:
+      - Galactic archaeology; the formation and hierarchical assembly of the Milky Way halo; globular cluster systems; stellar ages and isochrone fitting; the age–metallicity relation; accreted dwarf galaxies and the Gaia–Sausage–Enceladus merger; low-mass stars and the mixing-length parameter.
+
+    Teaching and Leadership:
+      - bullet: "**TODO Institution** — Teaching Fellow (YEAR): led sections/office hours; assisted with assignment and exam design."
+      - bullet: "**TODO Program** — Mentor (YEAR–YEAR): mentored undergraduate researchers; advised on grad-school applications."
+
+    Professional Activities:
+      - bullet: "TODO: e.g. referee for a journal, review panel member, committee service."
+
+    Honors and Awards:
+      - bullet: "**YEAR** — TODO Fellowship / Award"
+
+    Talks:
+      - bullet: "*TODO Conference / Seminar*, Location (Month Year)"
+
+    Posters:
+      - bullet: "*TODO Conference*, Location (Month Year)"
+
+    Workshops:
+      - bullet: "*TODO Workshop / Summer School*, Location (Month Year)"
+
+    First-Author Publications:
+      - title: "The Age–Metallicity–Specific Orbital Energy Relation for the Milky Way's Globular Cluster System Confirms the Importance of Accretion for Its Formation"
+        authors:
+          - "***Woody, R.***"
+          - Schlaufman, K. C.
+        journal: "AJ, 162, 42"
+        date: "2021"
+        url: https://ui.adsabs.harvard.edu/abs/2021AJ....162...42W/abstract
+      - title: The Rapid Formation of the Metal-poor Milky Way
+        authors:
+          - "***Woody, R.***"
+          - et al.
+        journal: "ApJ, 978, 152"
+        date: "2025"
+        url: https://ui.adsabs.harvard.edu/abs/2025ApJ...978..152W
+      - title: Classical Cases of Non-Solar Mixing Length in Low Mass Stars
+        authors:
+          - "***Woody, R.***"
+          - et al.
+        journal: in preparation
+
+    Co-Author Publications:
+      - title: "TODO: title"
+        authors:
+          - Lead, A.
+          - "***Woody, R.***"
+          - et al.
+        journal: "Journal, vol, page"
