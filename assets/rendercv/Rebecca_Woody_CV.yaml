@@ -100,6 +100,38 @@ cv:
         journal: "ApJL, 1002, L41"
         date: "2026"
         url: https://ui.adsabs.harvard.edu/abs/2026ApJ..1002L..41A/abstract
+      - title: "All-sky Kinematics of the Distant Halo: The Reflex Response to the LMC"
+        authors:
+          - Chandra, V.
+          - Naidu, R. P.
+          - Conroy, C.
+          - "..."
+          - "***Woody, Rebecca***"
+          - et al.
+        journal: "ApJ, 988, 156"
+        date: "2025"
+        url: https://ui.adsabs.harvard.edu/abs/2025ApJ...988..156C/abstract
+      - title: Distant Echoes of the Milky Way's Last Major Merger
+        authors:
+          - Chandra, V.
+          - Naidu, R. P.
+          - Conroy, C.
+          - "..."
+          - "***Woody, Rebecca***"
+          - et al.
+        journal: "ApJ, 951, 26"
+        date: "2023"
+        url: https://ui.adsabs.harvard.edu/abs/2023ApJ...951...26C/abstract
+      - title: "A Ghost in Boötes: The Least-Luminous Disrupted Dwarf Galaxy"
+        authors:
+          - Chandra, V.
+          - Conroy, C.
+          - Caldwell, N.
+          - "..."
+          - "***Woody, Rebecca***"
+        journal: "ApJ, 940, 127"
+        date: "2022"
+        url: https://ui.adsabs.harvard.edu/abs/2022ApJ...940..127C/abstract
       - title: The Stellar Halo of the Galaxy is Tilted and Doubly Broken
         authors:
           - Han, J. J.
@@ -111,3 +143,13 @@ cv:
         journal: "AJ, 164, 249"
         date: "2022"
         url: https://ui.adsabs.harvard.edu/abs/2022AJ....164..249H/abstract
+      - title: A Tilt in the Dark Matter Halo of the Galaxy
+        authors:
+          - Han, J. J.
+          - Naidu, R. P.
+          - Conroy, C.
+          - "..."
+          - "***Woody, Rebecca***"
+        journal: "ApJ, 934, 14"
+        date: "2022"
+        url: https://ui.adsabs.harvard.edu/abs/2022ApJ...934...14H/abstract
