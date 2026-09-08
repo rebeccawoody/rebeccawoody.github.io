@@ -200,3 +200,60 @@ body {
     text-align: left;
   }
 }
+
+/* In-browser PDF viewer (the CV tab, when page.cv_pdf is set) */
+.cv-pdf-embed {
+  max-width: 900px;
+  margin: 1.25rem auto 2.5rem;
+}
+.cv-pdf-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+}
+.cv-pdf-bar i {
+  margin-right: 0.3rem;
+}
+.cv-pdf-frame {
+  width: 100%;
+  height: calc(100vh - 190px);
+  min-height: 600px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  background: #fff;
+}
+.cv-pdf-fallback {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+}
+
+/* Print rules — the HTML CV (/cv/print/) prints as a clean sheet with no site
+   chrome. Headless Chrome uses print emulation, so this is what lands in the PDF. */
+@media print {
+  body {
+    background: #fff !important;
+    background-image: none !important;
+  }
+  nav,
+  .navbar,
+  footer,
+  #up-btn,
+  .no-print {
+    display: none !important;
+  }
+  .cv-paper {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+  .cv-paper a {
+    border-bottom: none;
+  }
+  @page {
+    size: A4;
+    margin: 15mm 16mm;
+  }
+}

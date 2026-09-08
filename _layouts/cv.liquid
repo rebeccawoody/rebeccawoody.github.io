@@ -3,12 +3,28 @@ layout: default
 ---
 {% comment %}
   Local override of the al_folio_cv layout.
-  Instead of the gem's Bootstrap "card" rendering, this emits a single-column,
-  LaTeX-style academic CV (serif, ruled section headings) from the same
-  _data/cv.yml (rendercv) data. Sections render in the order written in cv.yml.
+
+  Two modes, driven by page frontmatter:
+    * page.cv_pdf set  -> embed that PDF in an in-browser viewer (the CV tab).
+    * otherwise        -> render a single-column, LaTeX-style HTML CV (serif,
+                          ruled section headings) from _data/cv.yml. This mode
+                          also doubles as the print source for the PDF
+                          (see /cv/print/ and the @media print rules in main.scss).
 {% endcomment %}
 {% assign cv = site.data.cv.cv %}
 
+{% if page.cv_pdf %}
+  {% capture pdf_url %}{% if page.cv_pdf contains '://' %}{{ page.cv_pdf }}{% else %}{{ page.cv_pdf | relative_url }}{% endif %}{% endcapture %}
+  <div class="cv-pdf-embed">
+    <div class="cv-pdf-bar">
+      <a href="{{ pdf_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i> Open in new tab</a>
+      <a href="{{ pdf_url }}" download><i class="fa-solid fa-download"></i> Download PDF</a>
+      {% if page.cv_web_url %}<a href="{{ page.cv_web_url | relative_url }}"><i class="fa-solid fa-code"></i> View as web page</a>{% endif %}
+    </div>
+    <iframe class="cv-pdf-frame" src="{{ pdf_url }}#view=FitH" title="{{ cv.name }} — Curriculum Vitae" loading="lazy"></iframe>
+    <p class="cv-pdf-fallback">Can’t see the CV above? <a href="{{ pdf_url }}">Open the PDF directly.</a></p>
+  </div>
+{% else %}
 <div class="cv-paper">
   <header class="cv-head">
     <div class="cv-head-left">
@@ -92,3 +108,4 @@ layout: default
     </section>
   {% endfor %}
 </div>
+{% endif %}
