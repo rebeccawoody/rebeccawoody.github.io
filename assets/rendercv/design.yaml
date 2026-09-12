@@ -39,5 +39,7 @@ design:
       separator: "|"
   sections:
     show_time_spans_in: []
+  entries:
+    degree_width: 1.5cm # wider so double degrees (e.g. "BS, BA") fit on one line
   templates:
     single_date: "YEAR" # publications show just the year (not "Jan 2021")

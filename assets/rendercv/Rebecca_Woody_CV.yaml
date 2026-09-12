@@ -11,9 +11,9 @@ cv:
   location: Cambridge, MA
   email: rebecca.woody@cfa.harvard.edu
   website: https://rebeccawoody.github.io/
-  social_networks:
-    - network: GitHub
-      username: rebeccawoody
+  # social_networks:
+  #   - network: GitHub
+  #     username: rebeccawoody
 
   sections:
     # Experience:
@@ -42,9 +42,9 @@ cv:
           - "Graduated summa cum laude"
 
     Research Interests:
-      - Stellar evolution and modeling, stellar ages and isochrone fitting, Galactic archaeology, asteroseismology, convection and mixing length theory, low mass stars, globular clusters 
+      - Stellar evolution and modeling, stellar ages and isochrone fitting, Galactic archaeology, asteroseismology, convection and mixing length theory, low mass stars, stellar spectroscopy, globular clusters 
 
-    Teaching and Leadership:
+    Teaching:
       - bullet: "Harvard University — Lab Teaching Fellow (Spring 2024): ASTRON 16, Stellar and Planetary Astronomy"
       - bullet: "Harvard University — Teaching Fellow (Spring 2022): ASTRON 100, Methods of Observational Astronomy"
 
@@ -57,13 +57,14 @@ cv:
 
     Talks:
       # - bullet: "*TODO Conference / Seminar*, Location (Month Year)"
+      - bullet: "ITC Luncheon Talk, Center for Astrophysics | Harvard & Smithsonian (March 2026)"
       - bullet: "MMT Science Symposium, University of Arizona (April 2026)"
 
     Posters:
       # - bullet: "*TODO Conference*, Location (Month Year)"
       - bullet: Searching for r-process Enhanced Metal-poor Stars in the Milky Way Halo, AAS 241 (January 2023)
 
-    Workshops:
+    Workshops & Conferences:
       - bullet: "Yale/CeNAM Nuclear Asteroseismology Workshop (July 2026)"
       - bullet: "MESA Summer School, KU Leuven, Belgium (July 2025)"
       - bullet: "Binary Stars in the Space Era, Keele University, UK (July 2025)"
