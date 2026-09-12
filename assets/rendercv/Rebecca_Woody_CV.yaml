@@ -40,6 +40,7 @@ cv:
         location: "Baltimore, MD"
         highlights:
           - "Summa cum laude"
+          - "Advisor: Kevin C. Schlaufman, Keith Hawkins"
 
     Research Interests:
       - Stellar evolution and modeling, stellar ages and isochrone fitting, Galactic archaeology, asteroseismology, convection and mixing length theory, low mass stars, stellar spectroscopy, globular clusters 
@@ -57,6 +58,7 @@ cv:
 
     Talks:
       # - bullet: "*TODO Conference / Seminar*, Location (Month Year)"
+      - bullet: "Exoplanets & Stars Seminar, Yale University (September 2026)"
       - bullet: "MMT Science Symposium, University of Arizona (April 2026)"
       - bullet: "MPIA Stars Meeting (July 2023)"
       - bullet: "ITC Luncheon Talk, Center for Astrophysics | Harvard & Smithsonian (April 2023)"
