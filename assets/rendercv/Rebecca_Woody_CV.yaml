@@ -39,7 +39,7 @@ cv:
         date: "Aug 2017 – May 2021" # literal text
         location: "Baltimore, MD"
         highlights:
-          - "Graduated summa cum laude"
+          - "Summa cum laude"
 
     Research Interests:
       - Stellar evolution and modeling, stellar ages and isochrone fitting, Galactic archaeology, asteroseismology, convection and mixing length theory, low mass stars, stellar spectroscopy, globular clusters 
@@ -57,17 +57,20 @@ cv:
 
     Talks:
       # - bullet: "*TODO Conference / Seminar*, Location (Month Year)"
-      - bullet: "ITC Luncheon Talk, Center for Astrophysics | Harvard & Smithsonian (March 2026)"
       - bullet: "MMT Science Symposium, University of Arizona (April 2026)"
+      - bullet: "MPIA Stars Meeting (July 2023)"
+      - bullet: "ITC Luncheon Talk, Center for Astrophysics | Harvard & Smithsonian (April 2023)"
 
     Posters:
       # - bullet: "*TODO Conference*, Location (Month Year)"
-      - bullet: Searching for r-process Enhanced Metal-poor Stars in the Milky Way Halo, AAS 241 (January 2023)
+      - bullet: Searching for r-process Enhanced Metal-poor Stars in the Milky Way Halo, AAS 235 (January 2020)
 
     Workshops & Conferences:
       - bullet: "Yale/CeNAM Nuclear Asteroseismology Workshop (July 2026)"
       - bullet: "MESA Summer School, KU Leuven, Belgium (July 2025)"
       - bullet: "Binary Stars in the Space Era, Keele University, UK (July 2025)"
+      - bullet: "SDSS-V Collaboration Meeting, Flatiron Institute (August 2023)"
+      - bullet: "235th AAS Meeting, Honolulu, HI (January 2020)"
 
     First-Author Publications:
       - title: Classical Cases of Non-solar Mixing Length in Low Mass Stars
