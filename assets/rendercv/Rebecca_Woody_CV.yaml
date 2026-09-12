@@ -56,21 +56,26 @@ cv:
       - bullet: "2020 Goldwater Scholar"
 
     Talks:
-      - bullet: "*TODO Conference / Seminar*, Location (Month Year)"
+      # - bullet: "*TODO Conference / Seminar*, Location (Month Year)"
+      - bullet: "MMT Science Symposium, University of Arizona (April 2026)"
 
     Posters:
-      - bullet: "*TODO Conference*, Location (Month Year)"
+      # - bullet: "*TODO Conference*, Location (Month Year)"
+      - bullet: Searching for r-process Enhanced Metal-poor Stars in the Milky Way Halo, AAS 241 (January 2023)
 
     Workshops:
       - bullet: "Yale/CeNAM Nuclear Asteroseismology Workshop (July 2026)"
-      - bullet: "MESA Summer School, KU Leuven (2025)"
+      - bullet: "MESA Summer School, KU Leuven, Belgium (July 2025)"
+      - bullet: "Binary Stars in the Space Era, Keele University, UK (July 2025)"
 
     First-Author Publications:
-      - title: Classical Cases of Non-Solar Mixing Length in Low Mass Stars
+      - title: Classical Cases of Non-solar Mixing Length in Low Mass Stars
         authors:
           - "***Woody, Rebecca***"
-          - et al.
-        journal: in preparation
+          - Conroy, C.
+          - Cargile, P. A.
+          - Dotter, A.
+        journal: submitted to ApJ
       - title: The Rapid Formation of the Metal-poor Milky Way
         authors:
           - "***Woody, Rebecca***"
