@@ -7,7 +7,7 @@
 # page); rendercv and al-folio use slightly different field names.
 cv:
   name: Rebecca Woody
-  headline: Ph.D. Candidate, Astrophysics
+  headline: Ph.D. Candidate, Astronomy & Astrophysics
   location: Cambridge, MA
   email: rebecca.woody@cfa.harvard.edu
   website: https://rebeccawoody.github.io/
@@ -68,10 +68,10 @@ cv:
       - bullet: Searching for r-process Enhanced Metal-poor Stars in the Milky Way Halo, AAS 235 (January 2020)
 
     Workshops & Conferences:
-      - bullet: "Yale/CeNAM Nuclear Asteroseismology Workshop (July 2026)"
+      - bullet: "Yale/CeNAM Nuclear Asteroseismology Workshop, Yale University, New Haven, CT (July 2026)"
       - bullet: "MESA Summer School, KU Leuven, Belgium (July 2025)"
       - bullet: "Binary Stars in the Space Era, Keele University, UK (July 2025)"
-      - bullet: "SDSS-V Collaboration Meeting, Flatiron Institute (August 2023)"
+      - bullet: "SDSS-V Collaboration Meeting, Flatiron Institute, NYC, NY (August 2023)"
       - bullet: "235th AAS Meeting, Honolulu, HI (January 2020)"
 
     First-Author Publications:
