@@ -15,6 +15,7 @@ set -euo pipefail
 cd "$(dirname "$0")/../.."   # repo root
 ENV="${RENDERCV_CONDA_ENV:-base}"
 
+# 1. Render the YAML to Typst (and a first-pass PDF we overwrite in step 2).
 conda run -n "$ENV" rendercv render assets/rendercv/Rebecca_Woody_CV.yaml \
   --design assets/rendercv/design.yaml \
   --locale-catalog assets/rendercv/locale.yaml \
@@ -22,5 +23,13 @@ conda run -n "$ENV" rendercv render assets/rendercv/Rebecca_Woody_CV.yaml \
   --pdf-path ../pdf/woody_cv.pdf \
   --dont-generate-markdown \
   --dont-generate-png
+
+# 2. Inject the BOLD ITALIC ALL-CAPS running page header (fellowship
+#    requirement) into the generated Typst and recompile to the final PDF.
+#    The classic theme has no native per-page header, so we add one here.
+conda run -n "$ENV" python assets/rendercv/inject_header.py \
+  assets/rendercv/rendercv_output/Rebecca_Woody_CV.typ \
+  assets/pdf/woody_cv.pdf \
+  CV
 
 echo "Wrote assets/pdf/woody_cv.pdf"
