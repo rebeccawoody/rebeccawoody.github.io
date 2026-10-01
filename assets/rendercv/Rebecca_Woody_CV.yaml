@@ -6,7 +6,7 @@
 # NOTE: this is separate from _data/cv.yml (which drives the /cv/print/ HTML
 # page); rendercv and al-folio use slightly different field names.
 cv:
-  name: Rebecca Turner Woody
+  name: Rebecca Woody
   headline: Ph.D. Candidate, Astrophysics
   location: Cambridge, MA
   email: rebecca.woody@cfa.harvard.edu
