@@ -29,7 +29,7 @@ cv:
       - institution: Harvard University           
         area: Astronomy & Astrophysics
         degree: PhD
-        date: "Aug 2021 – present" # literal text; publications use year-only (single_date: YEAR)
+        date: "Aug 2021 – May 2027 (exp.)" # literal text; publications use year-only (single_date: YEAR)
         location: Cambridge, MA
         highlights:
           - "Advisor: Charlie Conroy"
@@ -123,6 +123,16 @@ cv:
         journal: "ApJ, 988, 156"
         date: "2025"
         url: https://ui.adsabs.harvard.edu/abs/2025ApJ...988..156C/abstract
+      - title: A Detailed Chemical Study of the Extreme Velocity Stars in the Galaxy
+        authors:
+          - Nelson, T.
+          - Hawkins, K.
+          - Reggiani, H.
+          - "..."
+          - "***Woody, Rebecca***"
+        journal: "MNRAS, 532, 2875"
+        date: "2024"
+        url: https://ui.adsabs.harvard.edu/abs/2024MNRAS.532.2875N/abstract
       - title: Distant Echoes of the Milky Way's Last Major Merger
         authors:
           - Chandra, V.
@@ -134,6 +144,17 @@ cv:
         journal: "ApJ, 951, 26"
         date: "2023"
         url: https://ui.adsabs.harvard.edu/abs/2023ApJ...951...26C/abstract
+      - title: Dwarf Galaxy Archaeology from Chemical Abundances and Star-formation Histories
+        authors:
+          - Johnson, J. W.
+          - Conroy, C.
+          - Johnson, B. D.
+          - "..."
+          - "***Woody, Rebecca***"
+          - et al.
+        journal: "MNRAS, 526, 5084"
+        date: "2023"
+        url: https://ui.adsabs.harvard.edu/abs/2023MNRAS.526.5084J/abstract
       - title: "A Ghost in Boötes: The Least-Luminous Disrupted Dwarf Galaxy"
         authors:
           - Chandra, V.
@@ -165,3 +186,25 @@ cv:
         journal: "ApJ, 934, 14"
         date: "2022"
         url: https://ui.adsabs.harvard.edu/abs/2022ApJ...934...14H/abstract
+      - title: Birth of the Galactic Disk Revealed by the H3 Survey
+        authors:
+          - Conroy, C.
+          - Weinberg, D. H.
+          - Naidu, R. P.
+          - "..."
+          - "***Woody, Rebecca***"
+          - et al.
+        journal: "submitted to OJAp; arXiv:2204.02989"
+        date: "2022"
+        url: https://ui.adsabs.harvard.edu/abs/2022arXiv220402989C/abstract
+      - title: "Live Fast, Die α-Enhanced: The Mass–Metallicity–α Relation of the Milky Way's Disrupted Dwarf Galaxies"
+        authors:
+          - Naidu, R. P.
+          - Conroy, C.
+          - Bonaca, A.
+          - "..."
+          - "***Woody, Rebecca***"
+          - et al.
+        journal: "submitted to ApJ; arXiv:2204.09057"
+        date: "2022"
+        url: https://ui.adsabs.harvard.edu/abs/2022arXiv220409057N/abstract
