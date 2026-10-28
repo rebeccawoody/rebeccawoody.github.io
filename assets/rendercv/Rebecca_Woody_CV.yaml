@@ -78,8 +78,7 @@ cv:
       - bullet: "235th AAS Meeting, Honolulu, HI (January 2020)"
 
     Observatory Allocations:
-      - name: "Magellan Observatory, MIKE, 9 nights"
-        date: "2023"
+      - bullet: "Magellan Observatory, MIKE, 9 nights (2023)"
 
     First-Author Publications:
       - title: Classical Cases of Non-solar Mixing Length in Low Mass Stars
