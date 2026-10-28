@@ -25,6 +25,9 @@ cv:
     #     highlights:
     #       - "TODO: research group / advisor and a one-line description."
 
+    Research Interests:
+      - Stellar evolution and modeling, stellar ages, isochrone fitting, asteroseismology, exoplanet ages, Galactic archaeology, convection and mixing length theory, low mass stars, stellar spectroscopy, globular clusters
+
     Education:
       - institution: Harvard University           
         area: Astronomy & Astrophysics
@@ -46,9 +49,6 @@ cv:
       - bullet: "Graduate Research Assistant, Center for Astrophysics | Harvard & Smithsonian #h(1fr) 2021 – Present"
       - bullet: "NSF REU Research Assistant, University of Texas at Austin #h(1fr) 2019"
       - bullet: "Undergraduate Research Assistant, Johns Hopkins University #h(1fr) 2018 – 2021"
-
-    Research Interests:
-      - Stellar evolution and modeling, stellar ages and isochrone fitting, exoplanet ages, Galactic archaeology, asteroseismology, convection and mixing length theory, low mass stars, stellar spectroscopy, globular clusters 
 
     Teaching:
       - bullet: "Harvard University — Lab Teaching Fellow (Spring 2024): ASTRON 16, Stellar and Planetary Astronomy"
