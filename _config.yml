@@ -206,6 +206,9 @@ collections:
     output: true
   projects:
     output: true
+  almanac:
+    output: true
+    permalink: /almanac/:name/
   teachings:
     output: true
 
@@ -243,6 +246,7 @@ exclude:
   - gems/
   - migrations/
   - vendor
+  - assets/rendercv/ # CV/publication-list PDF source + build tooling (not served)
 keep_files:
   - CNAME
   - .nojekyll
