@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" role="img" aria-label="Placeholder star illustration">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#20325a"/>
+      <stop offset="1" stop-color="#0d1730"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.46" r="0.55">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity="0.9"/>
+      <stop offset="0.5" stop-color="#f3c04a" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#f3c04a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffdd7a"/>
+      <stop offset="1" stop-color="#e8a832"/>
+    </linearGradient>
+  </defs>
+
+  <!-- night-sky background -->
+  <rect width="480" height="480" fill="url(#sky)"/>
+
+  <!-- scattered background stars -->
+  <g fill="#ffffff">
+    <circle cx="70"  cy="86"  r="2.6" opacity="0.85"/>
+    <circle cx="402" cy="70"  r="2"   opacity="0.7"/>
+    <circle cx="430" cy="196" r="3"   opacity="0.9"/>
+    <circle cx="96"  cy="250" r="1.8" opacity="0.6"/>
+    <circle cx="58"  cy="392" r="2.4" opacity="0.8"/>
+    <circle cx="400" cy="410" r="2.2" opacity="0.75"/>
+    <circle cx="330" cy="356" r="1.6" opacity="0.55"/>
+    <circle cx="150" cy="60"  r="1.6" opacity="0.5"/>
+    <circle cx="250" cy="430" r="1.8" opacity="0.6"/>
+  </g>
+
+  <!-- central glow -->
+  <circle cx="240" cy="226" r="170" fill="url(#glow)"/>
+
+  <!-- gold five-point star -->
+  <path d="M240,110 L270.6,197.9 L363.6,199.8 L289.5,256.1 L316.4,345.2 L240,292 L163.6,345.2 L190.5,256.1 L116.4,199.8 L209.4,197.9 Z"
+        fill="url(#gold)" stroke="#fff3d0" stroke-width="4" stroke-linejoin="round"/>
+</svg>

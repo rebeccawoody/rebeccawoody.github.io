@@ -1,0 +1,28 @@
+{% assign card_image = entry.card_img | default: entry.img %}
+{% capture card_inner %}
+<div class="card almanac-card h-100{% unless entry.no_link %} hoverable{% endunless %}">
+  <div class="row no-gutters">
+    {% if card_image %}
+      <div class="col-md-5">
+        {% include figure.liquid loading="eager" path=card_image sizes="(min-width: 768px) 380px, 100vw" alt=entry.title class="card-img" %}
+      </div>
+    {% endif %}
+    <div class="{% if card_image %}col-md-7{% else %}col-md-12{% endif %}">
+      <div class="card-body">
+        <h3 class="card-title">{{ entry.title }}</h3>
+        {% if entry.subtitle %}
+          <p class="card-text project-citation mb-2"><em>{{ entry.subtitle }}</em></p>
+        {% endif %}
+        <p class="card-text">{{ entry.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+<div class="col mb-4">
+  {% if entry.no_link %}
+    {{ card_inner }}
+  {% else %}
+    <a href="{% if entry.redirect %}{{ entry.redirect }}{% else %}{{ entry.url | relative_url }}{% endif %}">{{ card_inner }}</a>
+  {% endif %}
+</div>
