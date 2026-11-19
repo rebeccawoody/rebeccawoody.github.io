@@ -2,7 +2,7 @@
 layout: page
 title: Almanac
 permalink: /almanac/
-description: An evolving almanac highlighting stars and star systems that are relevant to my own work, and others found in pop science or that are otherwise personally interesting.
+description: An evolving almanac highlighting stars that are relevant to my own work, and others that are personally interesting and/or interesting in pop culture.
 nav: true
 nav_order: 4
 horizontal: true

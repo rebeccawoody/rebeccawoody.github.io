@@ -2,7 +2,7 @@
 layout: almanac
 title: μ Cassiopeiae
 subtitle: the Queen's Jewel
-description: The brightest & nearest metal-poor, Sun-like star with a fundamental mass and radius measurements.
+description: The brightest & nearest metal-poor, Sun-like star with a fundamental mass and radius measurement.
 group: research
 order: 1
 live: true
