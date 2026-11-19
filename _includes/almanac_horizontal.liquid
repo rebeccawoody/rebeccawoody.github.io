@@ -1,13 +1,13 @@
 {% assign card_image = entry.card_img | default: entry.img %}
 {% capture card_inner %}
 <div class="card almanac-card h-100{% unless entry.no_link %} hoverable{% endunless %}">
-  <div class="row no-gutters">
+  <div class="almanac-card-row">
     {% if card_image %}
-      <div class="col-md-5">
-        {% include figure.liquid loading="eager" path=card_image sizes="(min-width: 768px) 380px, 100vw" alt=entry.title class="card-img" %}
+      <div class="almanac-card-thumb">
+        {% include figure.liquid loading="eager" path=card_image sizes="(max-width: 576px) 90vw, 150px" alt=entry.title class="card-img" %}
       </div>
     {% endif %}
-    <div class="{% if card_image %}col-md-7{% else %}col-md-12{% endif %}">
+    <div class="almanac-card-text">
       <div class="card-body">
         <h3 class="card-title">{{ entry.title }}</h3>
         {% if entry.subtitle %}

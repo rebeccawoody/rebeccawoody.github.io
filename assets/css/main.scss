@@ -63,32 +63,60 @@ body {
    Almanac — compact list cards (card_img thumbnail) + two-column detail pages.
    List-card rules scoped to .almanac-card so the Research cards are unaffected.
    ========================================================================= */
-/* Compact cards: cap the width and shrink the thumbnail so they read small. */
+/* Compact cards: capped width + a small fixed thumbnail. Self-contained flexbox
+   (not the theme's purged col-md-* grid, which only ships col-md-6). */
 .almanac-col {
-  max-width: 520px;
+  max-width: 460px;
   margin-left: auto;
   margin-right: auto;
 }
-.almanac-card .col-md-5 {
+.almanac-card-row {
   display: flex;
+  align-items: stretch;
 }
-.almanac-card figure,
-.almanac-card picture {
-  height: 100%;
-  width: 100%;
+.almanac-card-thumb {
+  flex: 0 0 150px;
+  max-width: 150px;
+}
+.almanac-card-thumb figure,
+.almanac-card-thumb picture {
   margin: 0;
+  height: 100%;
+  display: block;
 }
-.almanac-card .card-img {
+.almanac-card-thumb .card-img {
   width: 100%;
   height: 100%;
-  min-height: 130px;
+  min-height: 150px;
   object-fit: cover;
+  display: block;
+}
+.almanac-card-text {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+}
+.almanac-card-text .card-body {
+  padding: 0.8rem 1.1rem;
 }
 .almanac-card .card-title {
   font-size: 1.05rem;
+  margin-bottom: 0.35rem;
 }
-.almanac-card .card-body {
-  padding: 0.9rem 1rem;
+/* Stack the thumbnail above the text on narrow screens. */
+@media (max-width: 576px) {
+  .almanac-card-row {
+    flex-direction: column;
+  }
+  .almanac-card-thumb {
+    flex-basis: auto;
+    max-width: none;
+    width: 100%;
+  }
+  .almanac-card-thumb .card-img {
+    height: 160px;
+  }
 }
 .almanac-divider {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
