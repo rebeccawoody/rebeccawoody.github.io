@@ -133,6 +133,13 @@ body {
   flex: 0 0 360px;
   max-width: 360px;
   margin: 0 0 1rem;
+  /* Keep the figure in view while scrolling the longer prose column. It pins
+     below the 57px fixed navbar (matching the theme's 66px anchor offset) and
+     releases at the bottom of .almanac-layout. align-self avoids stretching,
+     which sticky needs. */
+  position: sticky;
+  top: 66px;
+  align-self: flex-start;
 }
 .almanac-figure img {
   width: 100%;
@@ -153,11 +160,13 @@ body {
   text-align: left;
   margin-top: 0.5rem;
 }
-/* Stack vertically on narrow screens: figure on top, prose below. */
+/* Stack vertically on narrow screens: figure on top, prose below.
+   Drop sticky here so the figure doesn't pin above the text it precedes. */
 @media (max-width: 700px) {
   .almanac-figure {
     flex-basis: 100%;
     max-width: 100%;
+    position: static;
   }
 }
 
