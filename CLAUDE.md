@@ -25,6 +25,13 @@ Built on the **al-folio** Jekyll theme. Live at **https://rebeccawoody.github.io
 - `assets/img/research/`: figure PNGs (+ source PDFs). `assets/css/main.scss`: local style overrides.
 - `_includes/projects_horizontal.liquid`: **local override** of the gem include (full-width cards, corrected image `sizes`, `no_link`/`published` support).
 
+## Almanac (star highlights)
+- `_almanac/`: a Jekyll **collection** (`output: true`, permalink `/almanac/:name/`), one file per star. Frontmatter: `title`, `subtitle` (italic), `description` (card teaser + detail-page lead), `group: research|personal`, `order:` (sort within group), **`live: true`** (rollout flag — unflagged stubs stay hidden), `card_img:` (cartoon/vector thumbnail for the list card), optional `sky_img:` + `sky_credit:` (real sky image + caption on the detail page). Entries use **`layout: almanac`**.
+- `_pages/almanac.md` (**Almanac**, `/almanac/`): renders **only `live: true`** entries, split into research then personal, with the divider auto-hidden when a group is empty. Publishing a star = add `card_img` + flip `live: true`.
+- `_includes/almanac_horizontal.liquid`: local card include — **compact** card on a **self-contained flexbox** (NOT the gem grid; see gotcha): 150px thumbnail + vertically-centred text, capped ~460px, stacks below 576px.
+- `_layouts/almanac.liquid`: local detail-page layout — title+subtitle+description header, then a two-column flex (`.almanac-layout`): the `sky_img` figure + `figcaption` caption on the **left** (sticky — pins 66px below the navbar while the prose scrolls, releases at the entry bottom), prose `{{ content }}` on the **right**; stacks below 700px.
+- **Sky images:** pulled from **NASA SkyView** (`skyview.gsfc.nasa.gov`) — CDS/Aladin is firewalled from the dev box. Bright naked-eye stars saturate every survey; Albireo uses an offline-built **2MASS J/H/Ks composite** (numpy+Pillow venv, fills only the zeroed saturated-core pixels). Reproducible recipe + full workflow in the `almanac-section` memory.
+
 ## Theme is gem-based
 Layouts/includes/sass live in the **`al_folio_core` gem** (pinned `= 1.0.15`), **not** the repo. To read them:
 `gem fetch al_folio_core -v 1.0.15 && tar -xf al_folio_core-1.0.15.gem && tar -xzf data.tar.gz`
@@ -39,5 +46,8 @@ Override a theme file by placing a same-path file in the repo (e.g. `assets/css/
 - **Markdown `|`** in body text becomes a table — reword or escape `\|`. Use `&amp;` for `&`.
 - **MathJax** is on with single-`$` inline delimiters enabled (`$...$` renders on cards).
 - The home dir `/Users/twoody` is itself a git repo — always operate inside `/Users/twoody/website`.
+- **Purged tailwind grid:** the theme's `tailwind.css` is purged and ships **only `.col-md-6`** (+ `.row`/`.no-gutters`/`.card`). Other `col-md-N` (5/7/12…) have **no width rules** and silently collapse/stack. Build custom card/column layouts with your own scoped flexbox, not `col-md-*`.
+- **kramdown `parse_block_html: false`** (GFM input): markdown **inside a block `<div>` is not parsed**. For two-column/wrapper layouts, put the structure in a **layout** (where `{{ content }}` is already-rendered HTML) rather than wrapping the markdown body — or set `markdown="1"` on the div.
+- **Previewing CSS without a deploy:** no local Jekyll build, but you can fetch the live `main.css`+`tailwind.css`, build a local mock HTML with the real DOM, and render/measure with headless Chrome (`--headless=new --screenshot`, inject a `getBoundingClientRect` readout for geometry). Much faster than the ~1–3 min deploy loop.
 
 See `PROJECT_LOG.md` for the change history.
