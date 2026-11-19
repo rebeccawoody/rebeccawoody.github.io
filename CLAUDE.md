@@ -3,6 +3,13 @@
 Personal academic website for **Rebecca Woody** (astrophysicist, PhD candidate, CfA | Harvard & Smithsonian).
 Built on the **al-folio** Jekyll theme. Live at **https://rebeccawoody.github.io/**.
 
+## Standing rule: keep these docs current
+After any **major milestone or big task** (a new section/page, a feature, a significant refactor, a new workflow or convention), update **both**:
+- **`CLAUDE.md`** — fold durable facts into the right section (Structure, Gotchas, config, a new standing rule). Keep deep reproducible detail in the project memories and reference them, rather than duplicating here.
+- **`PROJECT_LOG.md`** — add a new dated entry at the top, and retire any TODO the work closes.
+
+Do this when Rebecca explicitly asks, **and** proactively on your own judgment whenever you've completed something significant — don't wait to be told.
+
 ## Deploy & hosting
 - **Repo:** `git@github.com:rebeccawoody/rebeccawoody.github.io.git`, branch **`master`**. Public (required for free GitHub Pages).
 - **Pipeline:** push to `master` → `.github/workflows/deploy.yml` builds Jekyll → pushes `_site` to the **`gh-pages`** branch → Pages serves `gh-pages`.
