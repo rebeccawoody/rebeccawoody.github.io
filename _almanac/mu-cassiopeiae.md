@@ -5,6 +5,7 @@ subtitle: the Queen's Jewel
 description: The brightest & nearest metal-poor, Sun-like star with a fundamental mass and radius measurements.
 group: research
 order: 1
+live: true
 ---
 
 μ Cassiopeiae is a visible (~5th magnitude), nearby (~7.7 parsecs), metal-poor, G-type dwarf with a high proper motion. Its metallicity and high space motion indicate that it is 
@@ -20,8 +21,10 @@ Spectroscopy of μ Cas A reveals it to be metal-poor, with a metallicity [Fe/H] 
 The astrometric orbit of μ Cas, combined with radial velocity measurements, yields purely a dynamical measurement for the masses of both components. The primary star is bright and near enough that its angular size has also been resolved. The angular diameter is combined with the system's parallax to yield a purely geometric measurement of the star's linear radius, and so μ Cas A has both its mass and radius measured wholly independently of stellar evolutionary models, making it a prime benchmark for models of stellar interiors as well as atmospheres. 
 
 ## Using it to Improve our Standard Stellar Models
-μ Cas A, with the model-independent, fundamental measurements of its stellar parameters, offers an exceptional test of our models of stars. In my own work I have used it to test whether the way we model convection in the outer layers of metal-poor, Sun-like stars is correct. 
+μ Cas A, with the model-independent, fundamental measurements of its stellar parameters, offers an exceptional test of our models of stars. In my own work I have used it to test whether the way we model convection in the outer layers of metal-poor, Sun-like stars is correct.
 
+{% include figure.liquid loading="eager" path="assets/img/almanac/mu-cas-a-amlt-age-posterior.png" sizes="(min-width: 768px) 420px, 92vw" alt="Joint posterior for μ Cas A in age versus mixing-length parameter, showing a sub-solar mixing length." class="img-fluid rounded" %}
 
+The convective mixing length is set by a free parameter, $\alpha_\mathrm{MLT}$, which is conventionally calibrated on the Sun and then held fixed for all other stars. Fitting μ Cas A's fundamental mass and radius to stellar models while letting this parameter vary yields the joint posterior above (shown relative to the solar value $\alpha_{\mathrm{MLT},\odot}$, the dashed line; the shaded region marks ages older than the Universe). The data clearly prefer a **sub-solar** mixing length, $\alpha_\mathrm{MLT}/\alpha_{\mathrm{MLT},\odot} \approx 0.8$ — direct evidence that convection in this metal-poor star is *not* well described by the standard, Sun-calibrated prescription.
 
-*Entry in progress — details, figure, and references to be expanded.*
+*Entry in progress — details and references to be expanded.*
