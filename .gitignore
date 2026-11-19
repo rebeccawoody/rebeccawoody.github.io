@@ -22,8 +22,10 @@ vendor
 __pycache__/
 *.pyc
 
-# Local working notes (not part of the site)
+# Local working notes (kept local, not on the public repo)
 plan_for_research_projects.txt
+CLAUDE.md
+PROJECT_LOG.md
 
 # macOS
 .DS_Store
