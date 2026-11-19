@@ -1,7 +1,7 @@
 ---
 layout: almanac
 title: Albireo
-subtitle: aka β Cygni, the Head of the Swan
+subtitle: β Cygni, the Head of the Swan
 description: One of my favorite stars and one that first got me hooked on stellar astronomy.
 group: personal
 order: 1
@@ -11,7 +11,7 @@ sky_img: assets/img/almanac/albireo-2mass.jpg
 sky_credit: "2MASS near-infrared composite (J, H, Ks mapped to blue, green, red); the amber primary saturates the detector, so its zeroed-out core pixels have been filled in. Albireo B is the bluer companion to the upper-left. Data: 2MASS (NASA/IPAC/Caltech) via NASA SkyView."
 ---
 
-Albireo (β Cygni) marks the head of the Swan in the constellation Cygnus, and is the foot of the Northern Cross asterism. It appears as a single star to the naked eye, but even small telescopes resolve it into two components separated by roughly 35". It is one of the sky's best examples of a double star. Not only is it easily separated, but the two components have arguably the most striking and beautiful color difference of any double star in the sky.
+Albireo marks the head of the Swan in the constellation Cygnus, and is the foot of the Northern Cross asterism. It appears as a single star to the naked eye, but even small telescopes resolve it into two components, separated by roughly 35". It is one of the sky's greatest examples of a double star. Not only is it easily separated, but the two components have arguably the most striking and beautiful color difference of any double star in the sky.
 
 ## The pair
 
