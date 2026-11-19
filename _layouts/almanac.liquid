@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="post almanac-entry">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.subtitle %}<p class="post-description">{{ page.subtitle }}</p>{% endif %}
+    {% if page.description %}<p class="post-description almanac-blurb">{{ page.description }}</p>{% endif %}
+  </header>
+
+  <article>
+    {% if page.sky_img %}
+      <div class="almanac-layout">
+        <figure class="almanac-figure">
+          {% include figure.liquid loading="eager" path=page.sky_img sizes="(min-width: 768px) 360px, 92vw" alt=page.title class="img-fluid rounded" %}
+          {% if page.sky_credit %}<figcaption class="almanac-credit">{{ page.sky_credit }}</figcaption>{% endif %}
+        </figure>
+        <div class="almanac-body">
+          {{ content }}
+        </div>
+      </div>
+    {% else %}
+      {{ content }}
+    {% endif %}
+  </article>
+</div>

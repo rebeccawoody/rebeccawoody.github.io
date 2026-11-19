@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: almanac
 title: Albireo
 subtitle: aka β Cygni, the Head of the Swan
-description: One of my favorite stars and one that first got me hooked on stellar astronomy, though perhaps for the wrong reason.
+description: One of my favorite stars and one that first got me hooked on stellar astronomy.
 group: personal
 order: 1
 live: true
@@ -10,13 +10,6 @@ card_img: assets/img/almanac/placeholder-star.svg
 sky_img: assets/img/almanac/albireo-2mass.jpg
 sky_credit: "2MASS near-infrared composite (J, H, Ks mapped to blue, green, red); the amber primary saturates the detector, so its zeroed-out core pixels have been filled in. Albireo B is the bluer companion to the upper-left. Data: 2MASS (NASA/IPAC/Caltech) via NASA SkyView."
 ---
-
-{% if page.sky_img %}
-<div class="almanac-sky">
-  {% include figure.liquid loading="eager" path=page.sky_img class="img-fluid rounded" alt=page.title %}
-  {% if page.sky_credit %}<p class="almanac-credit">{{ page.sky_credit }}</p>{% endif %}
-</div>
-{% endif %}
 
 Albireo (β Cygni) marks the head of the Swan in the constellation Cygnus, and is the foot of the Northern Cross asterism. It appears as a single star to the naked eye, but even small telescopes resolve it into two components separated by roughly 35". It is one of the sky's best examples of a double star. Not only is it easily separated, but the two components have arguably the most striking and beautiful color difference of any double star in the sky.
 
@@ -31,7 +24,7 @@ Seeing two stars so close together naturally makes you assume that the two are p
 
 For a long time the pair were assumed to form a wide but gravitationally bound system, with the orbital period just being too long to easily see their orbital motion around each other. But as observational capabilities have improved this assumption has been challenged. ESA's *Gaia* mission offers the most precise astronometry of the system to date, and its measurements of the proper motions and parallaxes of Albireo A & B suggest that the two stars are actually too distant from each other and moving too disparatly to be gravitationally bound. This would make Albireo just an optical double, a chance alignment when their true 3D positions are superimposed on the plane of the sky. 
 
-I was disappointed when my grad school office mate first brought the *Gaia* update to my attention. Stellar evolution is one of my absolute favorite topics and I loved how Albireo was this perfect evocative example how the color and brightness of stars tells you about their lives and evolution. Of course the stars can still spur that discussion, but I feel that initial spark is somewhat lessened if you use just a coincident alignment. Still, this whole story shows that Albireo can now exemplify another lesson. It is a case study in how we must update our understanding and paradigms as we are presented with new measurements and data that conflict, the core of the scientific method.
+I was disappointed when my grad school officemate first brought the *Gaia* update to my attention. Stellar evolution is one of my absolute favorite topics and I loved how Albireo was this perfect evocative example how the color and brightness of stars tells you about their lives and evolution. Of course the stars can still spur that discussion, but I feel that initial spark is somewhat lessened if you use just a coincident alignment. Still, this whole story shows that Albireo can now exemplify another lesson. It is a case study in how we must update our understanding and paradigms as we are presented with new measurements and data that conflict, the core of the scientific method.
 
 
 ## Finding it
